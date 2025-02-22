@@ -45,7 +45,7 @@
     <!-- Carousel End -->
 
     {{-- Form --}}
-    @include('components.appointment')
+    @include('components.appointment-form')
 
     {{-- About --}}
      {{-- {{-- <!-- About Start --> --}}

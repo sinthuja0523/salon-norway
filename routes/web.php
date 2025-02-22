@@ -4,9 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MailController;
-use App\Http\controllers\AppointController;
-use App\Http\controllers\AboutController;
-use App\Http\controllers\ServiceController;
+use App\Http\Controllers\BookingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,15 +20,15 @@ use App\Http\controllers\ServiceController;
 Route::get('/', function () {
     return view('pages.home');
 });
-Route::get('/', function () {
+Route::get('/about', function () {
     return view('pages.abouts');
 });
 
-Route::get('/', function () {
+Route::get('/services', function () {
     return view('pages.services');
 });
 
-Route::get('/', function () {
+Route::get('/contact', function () {
     return view('pages.contacts');
 });
 
@@ -39,9 +37,9 @@ Route::get('/', function () {
 
 //Route::get('pages.aboutus' ,[AboutController::class , 'aboutus']);
 
-Route::get('/appoint' , [AppointController::class,'appoint']);
-Route::get('/create', [AppointController::class,'create']);
-Route::post('/create', [AppointController::class,'store']);
+// Route::get('/appoint' , [AppointController::class,'appoint']);
+// Route::get('/book', [AppointController::class,'create']);
+Route::post('/book', [BookingController::class,'store'])->name('book.appointment');
 
 
 
