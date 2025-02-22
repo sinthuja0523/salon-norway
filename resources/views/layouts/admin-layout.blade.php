@@ -39,7 +39,9 @@
     {{-- Sidebar --}}
     @include('components.admin-components.sidebar')
 
-    @yield('main')
+    <main id="main" class="main">
+        @yield('main')
+    </main>
 
     {{-- Footer --}}
     @include('components.admin-components.footer')
