@@ -4,6 +4,9 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MailController;
+use App\Http\controllers\AppointController;
+use App\Http\controllers\AboutController;
+use App\Http\controllers\ServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +20,31 @@ use App\Http\Controllers\MailController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.home');
 });
+Route::get('/', function () {
+    return view('pages.abouts');
+});
+
+Route::get('/', function () {
+    return view('pages.services');
+});
+
+Route::get('/', function () {
+    return view('pages.contacts');
+});
+
+
+
+
+//Route::get('pages.aboutus' ,[AboutController::class , 'aboutus']);
+
+Route::get('/appoint' , [AppointController::class,'appoint']);
+Route::get('/create', [AppointController::class,'create']);
+Route::post('/create', [AppointController::class,'store']);
+
+
+
 
 Route::get('SendEmail' , [MailController::class , 'SendEmail']);
 
