@@ -6,6 +6,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\TimeSlotController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -59,6 +61,19 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::get('/new-appointments',[AdminController::class,'newAppointmentsView'])->name('appointment.new');
+    Route::get('/rejected-appointments',[AdminController::class,'newRejectedView'])->name('rejected-new');
+    Route::get('/past-appointments',[AdminController::class,'pastappointmentView'])->name('past-new');
+
+
+    Route::get('/admindashboard',[AdminController::class,'admindashboardView'])->name('admindashboard-new');
+    Route::get('/time-slots',[AdminController::class,'timeSlotsView'])->name('timeslots-new');
+    Route::get('/dailyReports',[AdminController::class,'dailyReportsView'])->name('dailyreports-new');
+    Route::get('/weekly-reports',[AdminController::class,'weeklyReportsView'])->name('weeklyreports-new');
+    Route::get('/monthly-reports',[AdminController::class,'monthlyReportsView'])->name('monthlyreports-new');
+    Route::get('/branches',[AdminController::class,'branchesView'])->name('branches-new');
+
+    Route::get('/time-slots',[AdminController::class,'TimeSlotsView'])->name('timeslots-new'); 
+
 });
 
 require __DIR__.'/auth.php';

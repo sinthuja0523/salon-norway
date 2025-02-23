@@ -26,3 +26,4 @@ class BookingController extends Controller
 
     }
 }
+

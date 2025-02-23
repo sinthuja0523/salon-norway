@@ -18,28 +18,35 @@
                     </a>
                 </li>
                 <li>
-                    <a href="components-accordion.html">
+                    <a href="/rejected-appointments">
                         <i class="bi bi-circle"></i><span>Rejected appointments</span>
                     </a>
                 </li>
                 <li>
-                    <a href="components-badges.html">
+                    <a href="/past-appointments">
                         <i class="bi bi-circle"></i><span>Past Appointments</span>
                     </a>
                 </li>
             </ul>
         </li>
         <li class="nav-item">
-            <a class="nav-link collapsed" href="users-profile.html">
+            <a class="nav-link collapsed" href="/admindashboard">
                 <i class="bi bi-person"></i>
                 <span>Services</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="pages-faq.html">
+            <a class="nav-link collapsed" href="/time-slots">
                 <i class="bi bi-question-circle"></i>
                 <span>Time slots</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="/branches">
+                <i class="bi bi-question-circle"></i>
+                <span>Branch</span>
             </a>
         </li>
         <li class="nav-item">
@@ -49,17 +56,17 @@
             </a>
             <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="components-alerts.html">
+                    <a href="/dailyReports">
                         <i class="bi bi-circle"></i><span>Daily reports</span>
                     </a>
                 </li>
                 <li>
-                    <a href="components-accordion.html">
+                    <a href="/weekly-reports">
                         <i class="bi bi-circle"></i><span>Weekly reports</span>
                     </a>
                 </li>
                 <li>
-                    <a href="components-badges.html">
+                    <a href="/monthly-reports">
                         <i class="bi bi-circle"></i><span>Monthly reports</span>
                     </a>
                 </li>
